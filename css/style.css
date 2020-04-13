@@ -1,0 +1,105 @@
+small{
+    font-size: 12px;
+}
+
+.break{
+    color: rgba(255,255,255,.3);
+}
+
+.logoIcon{
+    width: 40px;
+}
+
+/* .navbar-brand{
+    margin-left: -19rem;
+} */
+
+div .img1{
+    background-image: url('../images/carousel1.jpg');
+}
+
+div .img2{
+    background-image: url('../images/carousel2.jpg');
+}
+
+div .img3{
+    background-image: url('../images/carousel3.jpg');
+}
+
+.card-title a{
+    color: #343a40 !important;
+}
+
+.my-4{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.spacing{
+    padding: 1.5rem 0;
+    line-height: 1.5;
+}
+
+.whyUsPar{
+    font-size: 1.1rem;
+}
+
+.contactParagraph{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social{
+    margin-bottom: 1.5rem;
+}
+
+.socialIcon img{
+    width: 40px;
+    margin: 0 1rem;
+}
+
+.fbsocialIcon img{
+    height: 40px;
+    margin: 0 1rem;
+}
+
+.justify{
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 769px) {
+    .sideTitle{
+        margin-top: 3rem;
+    }
+
+    .socialIcon img{
+        margin: 0rem;
+        margin-left: 1rem;
+    }
+    
+    .fbsocialIcon img{
+        margin: 0rem;
+        margin-right: .5rem;
+    }
+
+    .justify{
+        margin-top: 0rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #whyUs{
+        margin-top: 2rem;
+    }
+
+    .whyUsH1{
+        padding: 1.5rem 0;
+        line-height: 1.5;
+    }
+}
