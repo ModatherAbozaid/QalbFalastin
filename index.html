@@ -182,24 +182,38 @@
         <h2 class="contactParagraph">Talk to Us right away</h2>
       </div>    
       <div class="col-md-4">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" aria-labelledby="namelabel" placeholder="Enter name">
+        <form name="sentMessage" id="contactForm" novalidate action="mail/contact_me.php">
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="name">Name</label>
+              <!-- use aria-labelledby="namelabel" to connect label with input -->
+              <input type="text" class="form-control" aria-labelledby="namelabel" placeholder="Enter name" required data-validation-required-message="Please enter your name.">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" aria-labelledby="emaillabel" placeholder="Enter email">
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="email">Email</label>
+              <!-- use aria-labelledby="emaillabel" to connect label with input -->
+              <input type="email" class="form-control" aria-labelledby="emaillabel" placeholder="Enter email" class="form-control" required data-validation-required-message="Please enter your email address.">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" class="form-control" aria-labelledby="subjectlabel" placeholder="Enter Subject">
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="subject">Subject</label>
+              <!-- use aria-labelledby="subjectlabel" to connect label with input -->
+              <input type="text" class="form-control" aria-labelledby="subjectlabel" placeholder="Enter Subject" required data-validation-required-message="Please enter the subject">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" rows="3" aria-labelledby="messagelabel"></textarea>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="message">Message</label>
+              <!-- use aria-labelledby="messagelabel" to connect label with input -->
+              <textarea class="form-control" rows="3" aria-labelledby="messagelabel" required data-validation-required-message="Please enter your message"></textarea>
+            </div>
           </div>
-          <button type="submit" class="btn btn-lg btn-secondary btn-block">Contact US</button>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-lg btn-secondary btn-block" id="sendMessageButton">Contact US</button>
         </form>
       </div>
     </div>
