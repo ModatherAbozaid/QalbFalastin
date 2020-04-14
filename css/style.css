@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 small{
     font-size: 12px;
 }
